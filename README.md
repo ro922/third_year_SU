@@ -2,7 +2,7 @@
  A simple page that makes it easy for a third-year student at Sinai University to access his study materials easily,can be accessed by clicking on the SU logo,
  It has a dashboard with information about the student and Page to communicate with the professor.
 ## link:
-https://github.com/ro922/SU_third_year/tree/main
+https://github.com/ro922/third_year_SU/tree/main
 ## Requirements:
 modern web browser (Chrome, Firefox, Edge...)
 ## How to Run:
