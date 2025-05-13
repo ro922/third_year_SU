@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student board</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- ====== Header ====== -->
+  <header>
+    <div class="navbar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCDU5UkmrPyG3FU9WvE-TrFnJavOrYJ5dYg&s" alt="su logo" width="200" class="img">
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="message.html">Messages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main>
+    <section class="student-info">
+      <p><strong>اسم الطالب:</strong> خديجة محمد سعيد</p>
+      <p><strong>المواد المسجلة:</strong> <span id="registeredCount">0</span></p>
+      <p><strong>المواد المتبقية:</strong> <span id="remainingCount">0</span></p>
+    </section>
+
+    <section class="subject-list">
+      <h2>المواد المتاحة:</h2>
+      <ul id="subjectList">
+        <li><input type="checkbox"> WWW Programming</li>
+        <li><input type="checkbox"> WDT</li>
+        <li><input type="checkbox"> Web Design</li>
+        <li><input type="checkbox"> Data Communication</li>
+        <li><input type="checkbox"> Web Client</li>
+        <li><input type="checkbox"> Network-Based Multimedia</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+
+</body>
+</html>

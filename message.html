@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرسائل</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .messages-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow:  4px 8px rgba(16, 11, 11, 0.1);
+            color: #0077cc;
+             font-weight: bold;
+
+        }
+
+        .messages-container h2 {
+            text-align: center;
+            color: #005baa;
+        }
+
+        form label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        form textarea {
+            resize: none;
+            min-height: 120px;
+        }
+
+        .send-button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #0c4167;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <div class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCDU5UkmrPyG3FU9WvE-TrFnJavOrYJ5dYg&s" alt="su logo" width="200" class="img">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="message.html">Messages</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <main>
+        <div class="messages-container">
+            <h2>تواصل مع الدكاترة</h2>
+            <form>
+                <label for="doctor">اختر الدكتور:</label>
+                <select id="doctor" name="doctor">
+                    <option value="">-- اختر --</option>
+                    <option value="dr_ahmed">د. أحمد علي</option>
+                    <option value="dr_sara">د. سارة مصطفى</option>
+                    <option value="dr_hassan">د. حسن محمود</option>
+                </select>
+
+                <label for="subject">عنوان الرسالة:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" class="send-button">إرسال</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sinai University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
